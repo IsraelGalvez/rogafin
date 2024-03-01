@@ -1,0 +1,46 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/carLoan.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Crédito Hipotecario{% endblock %}
+
+
+{% block content %}
+
+    <main class="main">
+        <section class="main_section1">
+            <h1 class="main_section1_h1">CRÉDITO AUTOMOTRIZ</h1>
+            <hr class="main_section1_hr">
+            <h3 class="main_section1_h3">Te ayudamos a elegir el mejor crédito sgún tus necesidades</h3>
+            <a class="main_section1_a" href="#main_section3">OPCIONES DE CRÉDITO AUTOMOTRIZ</a>
+        </section>
+        <section class="main_section2">
+            <h2 class="main_section2_h2">¿EN QUE CONSISTE NUESTROS SERVICIOS?</h2>
+            <h3 class="main_section2_h3">Te asesoramos sin costo en la selección de tu crédito automotriz; resolvemos tus dudas y te acompañamos en todo momento.</h3>
+            <figure class="main_section2_figure_imageSold">
+                <img class="main_section2_img" src="{% static 'core/img/compracarro.webp' %}" alt="Imagen de de personas recibiendo su casa">
+            </figure>
+        </section>
+        <section id="main_section3" class="main_section3">
+            <h1 class="main_section3_h1">¡CONOCE LAS MEJORES OPCIONES DE CRÉDITO QUE TENEMOS PARA TI!</h1>
+            <hr class="main_section3_hr">
+            <div class="section3_container_info">
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/adquisicion-de-autos.jpeg' %}" alt="hola">
+                        <span class="section3_container_info_item_span">ADQUISICIÓN DE<br><strong>AUTOS</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Adquiere el auto ideal para ti y haz crecer tu patrimonio.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'contacto' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

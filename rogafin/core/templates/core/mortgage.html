@@ -1,0 +1,137 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/mortgage.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Crédito Hipotecario{% endblock %}
+
+
+{% block content %}
+
+    <main class="main">
+        <section class="main_section1">
+            <h1 class="main_section1_h1">CRÉDITO HIPOTECARIO</h1>
+            <hr class="main_section1_hr">
+            <h3 class="main_section1_h3">Antes de comprar un crédito, asesórate con nosotros</h3>
+            <a class="main_section1_a" href="#main_section3">OPCIONES DE CRÉDITO HIPOTECARIO</a>
+        </section>
+        <section class="main_section2">
+            <h2 class="main_section2_h2">¿EN QUE CONSISTE NUESTROS SERVICIOS?</h2>
+            <h3 class="main_section2_h3">Te asesoramos sin costo en la elección del crédito hipotecario más conveniente para ti según tu perfil y tus necesidades. Te acompañamos desde inicio hasta la firma de tus escrituras.</h3>
+            <figure class="main_section2_figure_imageSold">
+                <img class="main_section2_img" src="{% static 'core/img/sold.webp' %}" alt="Imagen de de personas recibiendo su casa">
+            </figure>
+        </section>
+        <section id="main_section3" class="main_section3">
+            <h2 class="main_section3_h2">¡CONOCE LAS MEJORES OPCIONES DE CRÉDITO QUE TENEMOS PARA TI!</h2>
+            <hr class="main_section3_hr">
+            <div class="section3_container_info">
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/vivienda.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">ADQUISICIÓN DE<br><strong>VIVIENDA</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Adquiere la casa de tus sueños con el crédito de adquisición de vivienda.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'adquisicionVivienda' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img"  src="{% static 'core/img/crédito-para-construcción.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">CRÉDITO PARA<br><strong>CONSTRUCCIÓN</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Construye tu casa o negocio con el 
+                        apoyo de un crédito hipotecario.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'prestamoConstruccion' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/mejora-de-hipoteca.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">MEJORA DE<br><strong>HIPOTECA</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Cambia tu hipoteca actual 
+                        a otro banco que te ofrezca 
+                        mejores condiciones y beneficios.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'refinanciamientoHipotecario' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img"  src="{% static 'core/img/terreno.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">ADQUISICIÓN DE<br><strong>TERRENO</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Adquiere un terreno en la mejor zona y construye tu casa a tu gusto y a tus necesidades.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'adquisicionTerreno' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/CRÉDITO-DE-TERRENO-CONSTRUCCIÓN.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">CRÉDITO DE<br><strong>TERRENO +</strong><br><strong>CONSTRUCCIÓN</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Adquiere tu terreno y construye tu nueva casa a tu medida.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'adquisicionTerrenoConstruccion' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/preventa.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">PRE<strong>VENTA</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Adquiere tu casa o departamento en preventa con un crédito hipotecario.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'preventas' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/liquidez.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">ADQUISICIÓN DE<br><strong>LIQUIDEZ</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Invertirte en un negocio, crea tu evento en sueños o liberarte de algunas deudas.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'prestamoLiquidez' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/cambio-hipoteca-liquidez.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">CAMBIO DE<br><strong>HIPOTECA + LIQUIDEZ</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Cambia tu hipoteca de banco y obtén excelentes beneficios.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="{% url 'refinanciamientoHipotecarioLiquidez' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+                <div class="section3_container_info_item">
+                    <figure class="section3_container_info_item_figure">
+                        <img class="section3_container_info_item_img" src="{% static 'core/img/remodelación.webp' %}" alt="hola">
+                        <span class="section3_container_info_item_span">REMODE<strong>LACIÓN</strong></span>
+                    </figure>
+                    <p class="section3_container_info_item_p">Si ya eres dueño de un inmueble, mejóralo con un crédito para remodelación o ampliación.</p>
+                    <div class="section3_container_info_item_links_container">
+                        <a href="#" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/aboutUs.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+
+{% block content %}
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <h1 class="main_section1_h1">¿QUIÉNES SOMOS?</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h1 class="main_section2_h1">¿QUE ES ROGAFIN SONORA?</h1>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Somos una de las empresa de asesoría financiera con más volumen de clientes satisfechos atendidos en el mercado nacional. Derivado del uso de plataformas tecnológicas propias y de la confianza de nuestros proveedores para el uso y operación de sus plataformas ofrecemos un servicio de alta calidad.</h3>
+        </section>
+
+
+
+        <section class="main_section3">
+            <h1 class="main_section3_h1">MISIÓN</h1>
+            <h3 class="main_section3_h3">Ganar la confianza de nuestros clientes ofreciendo asesorías de calidad y el mejor producto financiero.</h3>
+            <figure class="main_section3_figure_imageSold">
+                <img class="main_section3_img" src="{% static 'core/img/iconos/motivacion.webp' %}" alt="Imagen de de personas recibiendo su casa">
+            </figure>
+        </section>
+
+
+
+
+        <section class="main_section4">
+            <h1 class="main_section4_h1">VISIÓN</h1>
+            <h3 class="main_section4_h3">Ser la marca referente en el mercado de asesoría financiera por calidad y profesionalismo.</h3>
+            <figure class="main_section4_figure_imageSold">
+                <img class="main_section4_img" src="{% static 'core/img/iconos/vision.webp' %}" alt="Imagen de de personas recibiendo su casa">
+            </figure>
+        </section>
+
+
+
+
+        <section class="main_section5">
+            <h1 class="main_section5_h1">VALORES</h1>
+            <ul class="main_section5_ul">
+                <li class="main_section5_ul_li">HONESTIDAD</li>
+                <li class="main_section5_ul_li">FRANQUEZA</li>
+                <li class="main_section5_ul_li">COMPROMISO</li>
+                <li class="main_section5_ul_li">INNOVACIÓN</li>
+                <li class="main_section5_ul_li">CALIDAD</li>
+            </ul>
+            <figure class="main_section5_figure_imageSold">
+                <img class="main_section5_img" src="{% static 'core/img/iconos/reunion.webp' %}" alt="Imagen de de personas recibiendo su casa">
+            </figure>
+        </section>
+
+
+
+
+        <section class="main_section6">
+            <h1 class="main_section6_h1">EQUIPO ROGAFIN SONORA</h1>
+            <figure class="main_section6_figure_imageSold">
+                <img class="main_section6_img" src="{% static 'core/img/team.webp' %}" alt="Imagen de de personas recibiendo su casa">
+            </figure>
+            <h3 class="main_section6_h3">Somos una empresa formada con el objetivo de generar valores y calidad de vida en sus colaboradores y clientes.</h3>
+        </section>
+
+
+
+    </main>
+{% endblock %}

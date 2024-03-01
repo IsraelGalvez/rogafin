@@ -1,0 +1,111 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/homeAcquisition.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO HIPOTECARIO</p>
+            <h1 class="main_section1_h1">ADQUISICIÓN <br>DE VIVIENDA</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO DE ADQUISICIÓN DE VIVIENDA</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Compra la casa que deseas, nueva o usada y obtén un crédito de hasta 90%, se puede utilizar programas adicionales con infonavit y fovissste para obtener mayor financiamiento y te acompañamos hasta la entrega de las llaves de tu casa.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">BENEFICIOS</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Al contratar tu crédito hipotecario, contarás con un seguro de vida y un seguro de daños durante toda la vida del crédito.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Si eres asalariado, podrás usar tu crédito INFONAVIT (Apoyo Infonavit o Cofinavit) o FOVISSSTE (Alia2 o Respalda2).</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Podrás deducir los intereses reales del crédito hipotecario.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Si cuentas con 30% del enganche, tienes la posibilidad de acceder a condiciones preferenciales, dependiendo de cada institución financiera.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/hogar.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Ofrecemos asesoría personalizada que te permite obtener el producto financiero que mejor se adapte a tu perfil y a tus necesidades.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Acompañamos en cada paso del proceso para que tenga mayor certidumbre y tranquilidad durante el trámite. Todo esto sin ningún costo.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Nos desplazamos al lugar y en el horario que sea más cómodo para ti.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Todas las opciones de financiamiento en un sólo lugar.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/edificio-de-oficinas.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="main_section5">
+            <div class="main_section5_container">
+                <a href="{% url 'contacto' %}" class="main_section2_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section5_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

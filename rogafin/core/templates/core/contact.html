@@ -1,0 +1,105 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/contact.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+
+{% block content %}
+
+    <main class="main">
+        <section class="main_section1">
+            <h1 class="main_section1_h1">CONTÁCTANOS</h1>
+            <hr class="main_section1_hr">
+            <h3 class="main_section1_h3">¡ASESORÍA Y TRÁMITE TOTALMENTE GRATUITO!</h3>
+            <a class="main_section1_a">¡CUMPLE TUS SUEÑOS CON ROGAFIN SONORA!</a>
+        </section>
+        <section class="main_section2">
+            <h2 class="main_section2_h2">UBICACIÓN</h2>
+            <div class="main_section2_map">
+                <iframe class="main_section2_map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.7910360715427!2d-110.97619742488983!3d29.082319275422226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce84400fc14cc3%3A0xe8f4f7157ad0bd1b!2sP.%C2%BA%20del%20Parque%2026%2C%20Valle%20Grande%2C%2083205%20Hermosillo%2C%20Son.!5e0!3m2!1ses-419!2smx!4v1708475442068!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section id="main_section3" class="main_section3">
+            <div class="main_section3_container1">
+                <h2 class="main_section3_container1_h2">¡PONTE EN CONTACTO CON NOSOTROS!</h2>
+                <h5 class="main_section3_container1_h5">Somos una de las empresa de asesoría financiera con más volumen de clientes satisfechos atendidos en el mercado nacional.</h5>
+                <ul class="main_section3_container1_ul">
+                    <li class="main_section3_container1_ul_li">
+                        <figure class="main_section3_container1_ul_li_figure">
+                            <img src="{% static 'core/img/iconos/icons8-mensaje-de-telefono-100.png' %}" alt="Icono de telefono">
+                        </figure>
+                        <div>
+                            <h3 class="main_section3_container1_ul_li_h3">TELEFONO:</h3>
+                            <p class="main_section3_container1_ul_li_p">6622602777</p>
+                        </div>
+                    </li>
+                    <li class="main_section3_container1_ul_li">
+                        <figure class="main_section3_container1_ul_li_figure">
+                            <img src="{% static 'core/img/iconos/icons8-correo-96.png' %}" alt="">
+                        </figure>
+                        <div>
+                            <h3 class="main_section3_container1_ul_li_h3">CORREO:</h3>
+                            <p class="main_section3_container1_ul_li_p">marimoreno@socasesores.com</p>
+                        </div>
+                    </li>
+                    <li class="main_section3_container1_ul_li">
+                        <figure class="main_section3_container1_ul_li_figure">
+                            <img src="{% static 'core/img/iconos/icons8-whatsapp-96.png' %}" alt="Icono de Whatsapp">
+                        </figure>
+                        <div>
+                            <h3 class="main_section3_container1_ul_li_h3">WHATSAPP:</h3>
+                            <p class="main_section3_container1_ul_li_p">6622785989</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_section3_container2">
+                <form class="main_section3_container2_form" action="" method="POST">
+                    <div class="main_section3_container2_form_div">
+                        <label class="main_section3_container2_form_div_label">NOMBRE:</label>
+                        <div>
+                            <input  class="main_section3_container2_form_div_input" type="text">
+                        </div>
+                    </div>
+                    <div class="main_section3_container2_form_div">
+                        <label class="main_section3_container2_form_div_label">CORREO ELECTRÓNICO:</label>
+                        <div>
+                            <input class="main_section3_container2_form_div_input" type="email">
+                        </div>
+                    </div>
+                    <div class="main_section3_container2_form_div">
+                        <label class="main_section3_container2_form_div_label">TELEFONO:</label>
+                        <div>
+                            <input  class="main_section3_container2_form_div_input" type="text">
+                        </div>
+                    </div>
+                    <div class="main_section3_container2_form_div">
+                        <label class="main_section3_container2_form_div_label">¿QUÉ CREDITO ESTA INTERESADO?:</label>
+                        <div>
+                            <select class="main_section3_container2_form_div_input">
+                                <option value="opcion1">Opción 1</option>
+                                <option value="opcion2">Opción 2</option>
+                                <option value="opcion3">Opción 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="main_section3_container2_form_div">
+                        <label class="main_section3_container2_form_div_label">¡DEJANOS UN MENSAJE!</label>
+                        <div>
+                            <textarea class="main_section3_container2_form_div_textarea" name="" id="" cols="50" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <div class="main_section3_container2_form_divButton">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

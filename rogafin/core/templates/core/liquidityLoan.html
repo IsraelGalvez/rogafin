@@ -1,0 +1,148 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/liquidityLoan.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO HIPOTECARIO</p>
+            <h1 class="main_section1_h1">CRÉDITO PARA<br>LIQUIDEZ</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO PARA LIQUIDEZ</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Puedes obtener un financiamiento entre el 70% y hasta el 90% del valor de tu casa. Este dinero lo puedes usar para pagar deudas, algún imprevisto, invertir en un negocio o lo que tú desees.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">BENEFICIOS</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Tú decides en qué usar los recursos de este crédito.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">El financiamiento otorgado dependerá del valor de la casa pudiendo alcanzar hasta el 70%.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Tendrás con un seguro de vida y uno de daños durante la vigencia del crédito.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/contrato.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">REQUISITOS Y CONDICIONES</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Es necesario contar con un inmueble libre de gravamen a tu nombre y, en algunos casos, puede ser a nombre de tu cónyuge.
+                            </li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">El plazo máximo en este tipo de crédito es de hasta 15 años.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Este destino genera IVA sobre los intereses.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">En caso de que el cliente ocupe los recursos para la consolidación de pasivos, algunos bancos le solicitarán la entrega de una carta compromiso que garantice la liquidación de las deudas.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/tiempo-rapido.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="main_section5">
+            <div class="main_section5_div">
+                <h2 class="main_section5_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section5_div_container">
+                    <ul class="main_section5_container_ul">
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Ofrecemos asesoría personalizada que te permite obtener el producto financiero que mejor se adapte a tu perfil y a tus necesidades.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Nos desplazamos al lugar y en el horario que sea más cómodo para ti.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Acompañamos en cada paso del proceso para que tenga mayor certidumbre y tranquilidad durante el trámite. Todo esto sin ningún costo.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Todas las opciones de financiamiento en un sólo lugar.</li>
+                        </div>
+
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Nuestro servicio no tiene costo para ti porque lo cubre el banco que hayas elegido.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section5_container_figure">
+                        <img src="{% static 'core/img/iconos/evento.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="main_section6">
+            <div class="main_section6_container">
+                <a href="{% url 'contacto' %}" class="main_section6_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section6_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

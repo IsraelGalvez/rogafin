@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'core/css/base.css' %}" rel="stylesheet">
+    {% block css %}{% endblock %}
+    <meta name="description" content="Rogafin Sonora es un empresa de asesoría financiera">
+    <title>{% block title %}{% endblock %} | Rogafin</title>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container_header">
+            <div>
+                <figure class="logo">
+                    <a href="{% url 'home' %}"><img class="logo_img" src="{% static 'core/img/logoblanco.webp' %}" alt="Logo empresa Rogafin"></a>
+                </figure>
+                <div class="menuButton">
+                    <img class="logoMenu" src="{% static 'core/img/Logo-button-logo.png' %}" alt="Logo menu">
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_ul_li"><a href="{% url 'home' %}">INICIO</a></li>
+                    <li class="nav_ul_li"><a href="{% url 'quienesSomos' %}">¿QUIÉNES SOMOS?</a></li>
+                    <li class="nav_ul_li"><a href="{% url 'contacto' %}">CONTACTO</a></li>
+                    <li class="nav_ul_li precalificateLi"><a class="precalificateA" target="_blank" href="https://socasesores.com/precalificacion/6IPW7/MARIA-JAZMIN-YARIVE-MORENO-SAMANIEGO">¡PRECALIFICATE!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+
+    <footer class="footer">
+        <section class="footer_section1">
+            <figure class="footer_logo">
+                <img class="footer_logo_img" src="{% static 'core/img/logoverde.webp' %}" alt="Logo empresa Rogafin">
+            </figure>
+            <div class="footer_section1_container_links">
+                <h3 class="footer_section1_container_links_h3">SERVICIOS</h3>
+                <ul class="footer_section1_container_links_ul">
+                    <li class="footer_section1_container_links_ul_li"><a href="{% url 'hipotecario' %}">Créditos Hipotecarios</a></li>
+                    <li class="footer_section1_container_links_ul_li"><a href="{% url 'creditoEmpresarial' %}">Créditos Empresariales</a></li>
+                    <li class="footer_section1_container_links_ul_li"><a href="{% url 'prestamoAuto' %}">Créditos Automotriz</a></li>
+                    <li class="footer_section1_container_links_ul_li"><a href="{% url 'asesoriaSeguros' %}">Asesoría de seguros</a></li>
+                </ul>
+            </div>
+            <div class="footer_section1_container_links">
+                <h3 class="footer_section1_container_links_h3">POLITICAS</h3>
+                <ul class="footer_section1_container_links_ul">
+                    <li class="footer_section1_container_links_ul_li"><a href="{% url 'avisoPrivacidad' %}">Aviso de Privacidad</a></li>
+                    <li class="footer_section1_container_links_ul_li"><a href="{% url 'terminosCondiciones' %}">Términos de Servicio</a></li>
+                </ul>
+            </div>
+            <div class="footer_section1_container_links redesSocialesMobile">
+                <h3 class="footer_section1_container_links_h3">REDES S0CIALES</h3>
+                <ul class="footer_section1_container_links_ul redesSociales">
+                    <li class="footer_section1_container_links_ul_li redesSociales_li"><a href="https://www.instagram.com/rogafinsonora/" target="_blank"><img src="{% static 'core/img/iconos/icons8-instagram-48.png' %}" alt="instagram log"></a></li>
+                    <li class="footer_section1_container_links_ul_li redesSociales_li"><a href="https://www.facebook.com/RogafinSonora" target="_blank"><img src="{% static 'core/img/iconos/icons8-facebook-nuevo-48.png' %}" alt="Facebook logo"></a></li>
+                    <li class="footer_section1_container_links_ul_li redesSociales_li"><a href="https://www.tiktok.com/@rogafinsonora" target="_blank"><img src="{% static 'core/img/iconos/icons8-tik-tok-50.png' %}" alt="Tiktok Logo"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer_section2">
+            <p>Paseo del Parque 26, Valle Grande, 83205 Hermosillo, Sonora.</p>
+        </section>
+        <section class="footer_section3">
+            <p>Todos los derechos reservados @RogafinSonora</p>
+        </section>
+    </footer>
+
+
+    <script src="./js/index.js"></script>
+    <script src="{% static 'core/javascript/index.js' %}"></script>
+</body>
+</html>

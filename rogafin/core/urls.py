@@ -28,5 +28,4 @@ urlpatterns = [
     path('carAcquisition/', CarAcquisitionPageView.as_view(), name="adquisicionAuto"),
     path('autoLoanRefinancing/', AutoLoanRefinancingPageView.as_view(), name="refinanciamientoPrestamoAuto"),
     path('motorcycleAcquisition/', MotorcycleAcquisitionPageView.as_view(), name="adquisicionMoto"),
-    path('contact/', ContactPageView.as_view(), name="contacto"),
 ]

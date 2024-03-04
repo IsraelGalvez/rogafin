@@ -79,6 +79,3 @@ class AutoLoanRefinancingPageView(TemplateView):
 
 class MotorcycleAcquisitionPageView(TemplateView):
     template_name = "core/motorcycleAcquisition.html"
-
-class ContactPageView(TemplateView):
-    template_name = "core/contact.html"

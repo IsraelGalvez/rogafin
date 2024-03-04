@@ -1,0 +1,109 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/commercialMortgageLoan.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO EMPRESARIAL</p>
+            <h1 class="main_section1_h1">CRÉDITO HIPOTECARIO<br>EMPRESARIAL</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO HIPOTECARIO EMPRESARIAL</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Incrementa tu patrimonio al adquirir un bien inmueble como locales, oficinas, bodegas, terrenos industriales o comerciales. También, puedes remodelar o construir en un terreno propio.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">BENEFICIOS</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">No hay penalización por pagos anticipados.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">La tasa de interés es fija anual durante toda la vida del crédito.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Asesoría sin costo de un experto en financiamiento para empresas.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/estadisticas.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">REQUISITOS Y CONDICIONES</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Es recomendable que tengas al menos 12 meses con el crédito hipotecario que desea sustituir.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">No presentar atrasos en el pago de las mensualidades del crédito.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">El origen del crédito actual debe ser: adquisición, remodelación o construcción.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">El monto correspondiente al crédito de liquidez puede emplearse con destino libre.</li>
+                        </div>
+
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">La suma del crédito de sustitución + el crédito de liquidez no podrá rebasar el 85% del valor de la vivienda.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/experiencia.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section65">
+            <div class="main_section5_container">
+                <a href="{% url 'contacto' %}" class="main_section5_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section5_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

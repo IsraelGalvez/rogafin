@@ -1,0 +1,149 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/creditCard.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO EMPRESARIAL</p>
+            <h1 class="main_section1_h1">TARJETA DE<br>CRÉDITO</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL TRAMITE PARA TARJETA DE CRÉDITO EMPRESARIAL</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Con la tarjeta de crédito dispones de un crédito revolvente para tu empresa. Está dirigida a Personas Físicas con Actividad Empresarial y Personas Morales para la adquisición de bienes que ayuden en tus actividades empresariales y/o como capital de trabajo para el desarrollo de tu negocio.
+            </h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">BENEFICIOS</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Cuenta con el respaldo de Visa.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Seguro por pérdida o demora de equipaje.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Seguro por protección de compra.</li>
+                        </div>
+
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Meses con y sin intereses según aplique.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Pago por SPEI usando la línea de crédito.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Alianza con WeWork.</li>
+                        </div>
+
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Posible exención del pago de anualidad.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Tarjetas para empleados con límites de gasto establecidos.</li>
+                        </div>
+
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Control del gasto en tiempo real.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Tarjeta digital que podrás usar desde su aprobación.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/seguridad-informatica2.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Tenemos más de 21 años de experiencia en el mercado.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Más de 10 opciones de financiamiento.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Se otorga el financiamiento en relación directa a las necesidades del cliente; es un traje a la medida.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Seguridad en el manejo de la información.</li>
+                        </div>
+
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Servicio de asesoría sin costo para ti, la institución financiera que otorga el crédito paga nuestros honorarios.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/financiamiento-colectivo.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="main_section5">
+            <div class="main_section5_container">
+                <a href="{% url 'contacto' %}" class="main_section5_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section5_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

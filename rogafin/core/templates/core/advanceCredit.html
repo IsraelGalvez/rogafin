@@ -1,0 +1,114 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/advanceCredit.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO EMPRESARIAL</p>
+            <h1 class="main_section1_h1">CRÉDITO<br>ANTICIPO</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO ANTICIPO</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Es un financiamiento que provee a los establecimientos de liquidez inmediata, con base en el historial de sus ventas con tarjetas bancarias. El establecimiento anticipa ventas futuras y las hace líquidas.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">BENEFICIOS</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Puedes obtener desde quince días hasta mes y medio de ventas futuras.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Devuelve el anticipo conforme vayas vendiendo.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Este financiamiento no tiene un destino definido, es de uso libre.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/sin-contacto.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Más de 10 opciones de financiamiento</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Asesoría personalizada, en el lugar de trabajo del cliente.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">El servicio de asesoría es sin costo. $0.00</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Profesionalismo y estrategia en cada opción de crédito.</li>
+                        </div>
+
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Se otorga el financiamiento en relación directa de las necesidades del cliente (TRAJE A LA MEDIDA)</li>
+                        </div>
+
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Seguridad en el manejo de la información</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/libro-electronico.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section5">
+            <div class="main_section5_container">
+                <a href="{% url 'contacto' %}" class="main_section5_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section5_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

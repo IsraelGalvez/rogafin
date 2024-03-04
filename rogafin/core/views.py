@@ -50,5 +50,35 @@ class LiquidityLoanPageView(TemplateView):
 class MortgageRefinanceLiquidityPageView(TemplateView):    
     template_name = "core/mortgageRefinanceLiquidity.html"
 
+class RemodelingLoanPageView(TemplateView):   
+    template_name = "core/remodelingLoan.html"
+
+class AdvanceCreditPageView(TemplateView):        
+    template_name = "core/advanceCredit.html"
+
+class SimpleCreditPageView(TemplateView):        
+    template_name = "core/simpleCredit.html"
+
+class RevolvingCreditPageView(TemplateView):
+    template_name = "core/revolvingCredit.html"
+
+class LeaseFinancingPageView(TemplateView):    
+    template_name = "core/leaseFinancing.html"
+
+class CommercialMortgageLoanPageView(TemplateView):
+    template_name = "core/commercialMortgageLoan.html"
+
+class CreditCardPageView(TemplateView):
+    template_name = "core/creditCard.html"
+
+class CarAcquisitionPageView(TemplateView):
+    template_name = "core/carAcquisition.html"
+
+class AutoLoanRefinancingPageView(TemplateView):
+    template_name = "core/autoLoanRefinancing.html"
+
+class MotorcycleAcquisitionPageView(TemplateView):
+    template_name = "core/motorcycleAcquisition.html"
+
 class ContactPageView(TemplateView):
     template_name = "core/contact.html"

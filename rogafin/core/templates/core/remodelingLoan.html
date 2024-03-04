@@ -1,0 +1,116 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/remodelingLoan.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO HIPOTECARIO</p>
+            <h1 class="main_section1_h1">CRÉDITO PARA<br>REMODELACIÓN</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO PARA REMODELACIÓN</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Si ya eres dueño del inmueble obtén un crédito para renovar, remodelar o ampliar. Puedes obtener hasta el 50% del valor actual de tu vivienda.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">BENEFICIOS</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">No requiere licencia de construcción, solo presupuesto de obra.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Los recursos otorgados pueden destinarse para trabajos de mantenimiento mayor, remodelación de acabados, cambio de instalaciones eléctricas, hidráulicas, sanitarias, cambios de cocina, ampliaciones o adecuaciones a la estructura de la vivienda.</li>
+                        </div>
+
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Te pueden prestar hasta el 50% de financiamiento sobre el valor actual del inmueble.</li>
+                        </div>
+
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Es combinable con un crédito de sustitución de hipoteca.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/renovacion1.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Ayudamos a cambiar vidas a través de nuestra asesoría. Estamos comprometidos en encontrar el mejor producto financiero para ti.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Nos ajustamos al horario que sea más cómodo para ti, presencial o digital.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Te acompañamos en cada paso del proceso para que tengas mayor certidumbre y tranquilidad durante el trámite. Todo esto sin ningún costo.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Todas las opciones de financiamiento en un solo lugar.</li>
+                        </div>
+
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Nuestro servicio no tiene costo para ti porque lo cubre el banco que hayas elegido.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/trabajo-en-equipo.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="main_section5">
+            <div class="main_section5_container">
+                <a href="{% url 'contacto' %}" class="main_section2_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section5_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

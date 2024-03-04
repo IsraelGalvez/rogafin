@@ -1,0 +1,133 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/revolvingCredit.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO EMPRESARIAL</p>
+            <h1 class="main_section1_h1">CRÉDITO<br>REVOLVENTE</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO REVOLVENTE</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Es una línea de crédito abierta de la cual puedes disponer una parte o la totalidad de los recursos autorizados. Es ideal para cubrir necesidades de corto plazo, y una de sus ventajas es que sólo pagarás los intereses del monto que hayas dispuesto.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">PUEDES DESTINARLO A:</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Capital de trabajo: para un uso de corto plazo, donde se requieren recursos financieros para cubrir rubros de manera inmediata.
+                            </li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Aprovechamiento de oportunidades en el mercado: ofertas de productos en pagos de contado o, por ejemplo, para la adquisición de mayor volumen de productos.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/colaboracion.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Lo pueden obtener pequeñas y medianas empresas con sólo 1 año de antigüedad.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Tenemos opciones para Personas Morales o PFAE.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Se cuentan con algunas soluciones si no cuentas con buen historial crediticio.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/puntaje-de-credito-comercial.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="main_section5">
+            <div class="main_section5_div">
+                <h2 class="main_section5_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section5_div_container">
+                    <ul class="main_section5_container_ul">
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Más de 10 opciones de financiamiento</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Se otorga el financiamiento en relación directa de las necesidades del cliente (TRAJE A LA MEDIDA)</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Seguridad en el manejo de la información.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Servicio de asesoría sin costo para ti, la institución financiera que otorga el crédito paga nuestros honorarios.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section5_container_figure">
+                        <img src="{% static 'core/img/iconos/seguridad-informatica1.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="main_section6">
+            <div class="main_section6_container">
+                <a href="{% url 'contacto' %}" class="main_section6_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section6_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

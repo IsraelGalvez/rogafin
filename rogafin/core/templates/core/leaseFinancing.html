@@ -1,0 +1,137 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/leaseFinancing.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO EMPRESARIAL</p>
+            <h1 class="main_section1_h1">CRÉDITO<br>ARRENDAMIENTO</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO ARRENDAMIENTO</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Equipa tu negocio y hazlo más productivo con una solución de arrendamiento. Te permitirá la adquisición de bienes productivos y contar con una empresa moderna dirigido a un amplio número de industrias. En SOC tenemos distintas opciones financieras para ti.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">DIRIGIDO A:</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Personas Morales.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Personas Físicas con Actividad Empresarial (PFAE)</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Deducibilidad de los intereses reales del crédito hipotecario.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/juventud.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">BENEFICIOS</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Creamos un traje a la medida, ya que el financiamiento se otorga en relación directa a las necesidades del cliente.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Obtén la maquinaria o el equipo que necesitas para impulsar tu negocio sin detenerte y dejando en garantía el mismo equipo.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Aprovecha la estrategia fiscal del Arrendamiento y al final del plazo compra tu equipo o activo.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/relacion.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="main_section5">
+            <div class="main_section5_div">
+                <h2 class="main_section5_div_h2">¿POR QUÉ ASESORARSE CON ROGAFIN SONORA?</h2>
+                <div class="main_section5_div_container">
+                    <ul class="main_section5_container_ul">
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Recibes asesoría personalizada en tu lugar de trabajo y/o de manera virtual en el momento que más te convenga.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Profesionalismo y estrategia en cada opción de crédito por parte de nuestros especialistas.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Seguridad en el manejo de la información.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">El servicio de asesoría es sin costo, porque la institución financiera que te otorgue el servicio pagará por nuestros honorarios.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section5_container_figure">
+                        <img src="{% static 'core/img/iconos/discusion.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="main_section6">
+            <div class="main_section6_container">
+                <a href="{% url 'contacto' %}" class="main_section6_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section6_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

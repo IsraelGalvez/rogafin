@@ -18,6 +18,9 @@
             <h3 class="main_section1_h3">Te ayudamos a elegir el mejor crédito sgún tus necesidades</h3>
             <a class="main_section1_a" href="#main_section3">OPCIONES DE CRÉDITO AUTOMOTRIZ</a>
         </section>
+
+
+
         <section class="main_section2">
             <h2 class="main_section2_h2">¿EN QUE CONSISTE NUESTROS SERVICIOS?</h2>
             <h3 class="main_section2_h3">Te asesoramos sin costo en la selección de tu crédito automotriz; resolvemos tus dudas y te acompañamos en todo momento.</h3>
@@ -25,22 +28,47 @@
                 <img class="main_section2_img" src="{% static 'core/img/compracarro.webp' %}" alt="Imagen de de personas recibiendo su casa">
             </figure>
         </section>
+
+
+
         <section id="main_section3" class="main_section3">
-            <h1 class="main_section3_h1">¡CONOCE LAS MEJORES OPCIONES DE CRÉDITO QUE TENEMOS PARA TI!</h1>
-            <hr class="main_section3_hr">
-            <div class="section3_container_info">
-                <div class="section3_container_info_item">
-                    <figure class="section3_container_info_item_figure">
-                        <img class="section3_container_info_item_img" src="{% static 'core/img/adquisicion-de-autos.jpeg' %}" alt="hola">
-                        <span class="section3_container_info_item_span">ADQUISICIÓN DE<br><strong>AUTOS</strong></span>
-                    </figure>
-                    <p class="section3_container_info_item_p">Adquiere el auto ideal para ti y haz crecer tu patrimonio.</p>
-                    <div class="section3_container_info_item_links_container">
-                        <a href="{% url 'contacto' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
-                        <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
-                    </div>
+        <h2 class="main_section3_h2">¡CONOCE LAS MEJORES OPCIONES DE CRÉDITO QUE TENEMOS PARA TI!</h2>
+        <hr class="main_section3_hr">
+        <div class="section3_container_info">
+            <div class="section3_container_info_item">
+                <figure class="section3_container_info_item_figure">
+                    <img class="section3_container_info_item_img"  src="{% static 'core/img/adquisicion-de-autos.webp' %}" alt="hola">
+                    <span class="section3_container_info_item_span">ADQUISICIÓN DE<br><strong>AUTOS</strong></span>
+                </figure>
+                <p class="section3_container_info_item_p">Adquiere el auto ideal para ti y haz crecer tu patrimonio.</p>
+                <div class="section3_container_info_item_links_container">
+                    <a href="{% url 'adquisicionAuto' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
                 </div>
             </div>
-        </section>
+            <div class="section3_container_info_item">
+                <figure class="section3_container_info_item_figure">
+                    <img class="section3_container_info_item_img" src="{% static 'core/img/sustituciónCréditoAuto.webp' %}" alt="hola">
+                    <span class="section3_container_info_item_span">SUSTITUCIÓN DE<br><strong>CRÉDITO DE AUTO</strong></span>
+                </figure>
+                <p class="section3_container_info_item_p">Si ya cuentas con un crédito de auto, mejora tus condiciones de inversión.</p>
+                <div class="section3_container_info_item_links_container">
+                    <a href="{% url 'refinanciamientoPrestamoAuto' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                </div>
+            </div>
+            <div class="section3_container_info_item">
+                <figure class="section3_container_info_item_figure">
+                    <img class="section3_container_info_item_img" src="{% static 'core/img/adquisiciónMoto.webp' %}" alt="hola">
+                    <span class="section3_container_info_item_span">ADQUISICIÓN DE<br><strong>MOTO</strong></span>
+                </figure>
+                <p class="section3_container_info_item_p">Adquiere tu motocicleta nueva y disfruta tus viajes sobre dos ruedas.</p>
+                <div class="section3_container_info_item_links_container">
+                    <a href="{% url 'adquisicionMoto' %}" class="section3_container_info_item_links_infoA">MÁS INFORMACIÓN</a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="section3_container_info_item_links_WhatsappA"></a>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 {% endblock %}

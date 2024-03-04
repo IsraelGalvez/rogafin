@@ -1,0 +1,137 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/motorcycleAcquisition.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+
+    <main class="main">
+
+
+
+        <section class="main_section1">
+            <p class="main_section1_p">CRÉDITO AUTOMOTRIZ</p>
+            <h1 class="main_section1_h1">ADQUISICIÓN<br>DE MOTO</h1>
+            <hr class="main_section1_hr">
+        </section>
+
+
+
+        <section class="main_section2">
+            <h2 class="main_section2_h2">CONOCE EL CRÉDITO ADQUISICIÓN DE MOTO</h2>
+            <hr class="main_section2_hr">
+            <h3 class="main_section2_h3">Podrás adquirir una motocicleta para uso particular, con las mejores marcas, por ejemplo: alta gama, Harley Davidson, BMW, Yamaha, Ducati, Honda, Suzuki, entre otras.</h3>
+        </section>
+
+
+
+
+        <section class="main_section3">
+            <div class="main_section3_div">
+                <h2 class="main_section3_div_h2">BENEFICIOS</h2>
+                <div class="main_section3_div_container">
+                    <ul class="main_section3_container_ul">
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Plazos hasta 60 meses.</li>
+                        </div>
+                        
+                        <div class="main_section3_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section3_container_ul_li">Monto máximo de crédito de $800 mil pesos.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section3_container_figure">
+                        <img src="{% static 'core/img/iconos/moto.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_section4">
+            <div class="main_section4_div">
+                <h2 class="main_section4_div_h2">DOCUMENTACIÓN NECESARIA</h2>
+                <div class="main_section4_div_container">
+                    <ul class="main_section4_container_ul">
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Solicitud de Crédito.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Identificación Oficial: INE o pasaporte vigente.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Comprobante de Domicilio: INE, Teléfono, Luz, Agua o predial.</li>
+                        </div>
+                        
+                        <div class="main_section4_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section4_container_ul_li">Comprobante de ingresos.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section4_container_figure">
+                        <img src="{% static 'core/img/iconos/cv.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="main_section5">
+            <div class="main_section5_div">
+                <h2 class="main_section5_div_h2">DOCUMENTACIÓN NECESARIA</h2>
+                <div class="main_section5_div_container">
+                    <ul class="main_section5_container_ul">
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Solicitud de Crédito.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Identificación Oficial: INE o pasaporte vigente.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Comprobante de Domicilio: INE, Teléfono, Luz, Agua o predial.</li>
+                        </div>
+                        
+                        <div class="main_section5_container_ul_div">
+                            <span>•</span>
+                            <li class="main_section5_container_ul_li">Comprobante de ingresos.</li>
+                        </div>
+
+                    </ul>
+                    <figure class="main_section5_container_figure">
+                        <img src="{% static 'core/img/iconos/buscar.webp' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="main_section6">
+            <div class="main_section6_container">
+                <a href="{% url 'contacto' %}" class="main_section6_container_button">COTIZA TU CRÉDITO PARA ADQUISICIÓN DE VIVIENDA</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B526622785989&text&type=phone_number&app_absent=0" target="_blank" class="main_section6_container_button_WhatsappA"></a>
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

@@ -103,7 +103,7 @@
     align-items: center;
     justify-content: center;
     height: auto;
-    min-height: 450px;
+    min-height: 650px;
     z-index: 1;
 }
 
@@ -113,6 +113,7 @@
     color: #107353;
     font-size: 4.6rem;
     margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 .main_section3_hr{
@@ -122,30 +123,144 @@
     margin-bottom: 35px;
 }
 
-.main_section3_h3{
-    font-size: 2.7rem;
-    font-weight: 400;
-    text-align: center;
-    max-width: 900px;
+.section3_container_info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
-.main_section3_a{
-    width: 260px;
-    height: 49px;
-    background-color: #107353;
-    color: white;
-    font-size: 2.4rem;
+.section3_container_info_item{
+    width: 276px;
+    height: 340px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.section3_container_info_item:hover{
+    transform: translateY(-10px);
+}
+
+.section3_container_info_item_figure{
+    position: relative;
+    width: 100%; /* Ajusta esto a la anchura que necesites */
+    height: 176px;/* Ajusta esto a la altura que necesites */
+    border-radius: 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 14px;
+    align-items: end;
+}
+
+.section3_container_info_item_figure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.7));
+    z-index: 1;
+    border-radius: 15px;
+    margin-top: 89px;
+}
+
+.section3_container_info_item_img {
+    width: 100%;
+    height: 176px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.section3_container_info_item_span{
+    position: relative;
+    width: 30%;
+    z-index: 2;
+    font-size: 1.6rem;
+    color: white;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section3_container_info_item_p{
+    width: 80%;
+    height: 84px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.section3_container_info_item_links_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section3_container_info_item_links_infoA{
+    width: 180px;
+    height: 30px;
+    background-color: #107353;
     text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
     font-weight: bold;
-    margin-top: 50px;
-    border-color: #28a745;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: solid 5px #28a745;
+}
+
+.section3_container_info_item_links_WhatsappA{
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/iconos/icons8-whatsapp-96.png');
+    background-size: cover; 
+    margin-left: 5px;
 }
 
 /* <-------- media querys --------> */
+
+@media (max-width: 1300px){
+    .section3_container_info{
+        max-width: 620px;
+    }
+
+    .section3_container_info_item{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 1185px){
+
+    .main_section3_h2{
+        margin-top: 30px;
+    }
+
+    .section3_container_info{
+        width: 600px;
+        height: auto;
+    }
+
+    .section3_container_info_item{
+        margin-bottom: 30px;
+    }
+    
+}
+
 
 @media (max-width: 900px){
     /* <-------- main container section 1 mobile --------> */
@@ -185,9 +300,31 @@
         width: 75%;
     }
 
+    /* <-------- main container section 3 mobile --------> */
+
     .main_section3_h3{
         width: 90%;
     }
+
+    .main_section3_h2{
+        width: 90%;
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .main_section3_hr{
+        width: 77px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 797px){
+
+    .section3_container_info{
+        width: 300px;
+        justify-content: center;
+    }
+    
 }
 
 @media (max-width: 413px){

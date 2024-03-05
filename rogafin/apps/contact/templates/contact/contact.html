@@ -58,40 +58,37 @@
                     </li>
                 </ul>
             </div>
+            
             <div class="main_section3_container2">
-                <form class="main_section3_container2_form" action="" method="POST">
+                <form class="main_section3_container2_form" action="" method="POST">{% csrf_token %}
                     <div class="main_section3_container2_form_div">
                         <label class="main_section3_container2_form_div_label">NOMBRE:</label>
                         <div>
-                            <input  class="main_section3_container2_form_div_input" type="text">
+                            {{ form.name }}
                         </div>
                     </div>
                     <div class="main_section3_container2_form_div">
                         <label class="main_section3_container2_form_div_label">CORREO ELECTRÓNICO:</label>
                         <div>
-                            <input class="main_section3_container2_form_div_input" type="email">
+                            {{ form.email }}
                         </div>
                     </div>
                     <div class="main_section3_container2_form_div">
                         <label class="main_section3_container2_form_div_label">TELEFONO:</label>
                         <div>
-                            <input  class="main_section3_container2_form_div_input" type="text">
+                            {{ form.phoneNum }}
                         </div>
                     </div>
                     <div class="main_section3_container2_form_div">
                         <label class="main_section3_container2_form_div_label">¿QUÉ CREDITO ESTA INTERESADO?:</label>
                         <div>
-                            <select class="main_section3_container2_form_div_input">
-                                <option value="opcion1">Opción 1</option>
-                                <option value="opcion2">Opción 2</option>
-                                <option value="opcion3">Opción 3</option>
-                            </select>
+                            {{ form.credit_interest }}
                         </div>
                     </div>
                     <div class="main_section3_container2_form_div">
                         <label class="main_section3_container2_form_div_label">¡DEJANOS UN MENSAJE!</label>
                         <div>
-                            <textarea class="main_section3_container2_form_div_textarea" name="" id="" cols="50" rows="6"></textarea>
+                            {{ form.message }}
                         </div>
                     </div>
                     <div class="main_section3_container2_form_divButton">

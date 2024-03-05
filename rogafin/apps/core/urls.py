@@ -4,7 +4,7 @@ from .views import *
 urlpatterns = [
     path('', HomePageView.as_view(), name="home"),
     path('aboutUs/', aboutUsPageView.as_view(), name="quienesSomos"),
-    path('noticePrivacy/', NoticePrivacyPageView.as_view(), name="avisoPrivacidad"),
+    path('noticePrivacy/', NoticePrivacyPageView.as_view(), name="aboutUs"),
     path('businessCredit/', BusinessCreditPageView.as_view(), name="creditoEmpresarial"),
     path('mortgage/', MortgagePageView.as_view(), name="hipotecario"),
     path('termsConditions/', TermsConditionsCreditPageView.as_view(), name="terminosCondiciones"),

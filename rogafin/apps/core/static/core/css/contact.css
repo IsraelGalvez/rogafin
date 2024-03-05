@@ -163,7 +163,6 @@
 .main_section3_container2_form_div{
     width: 87%;
 }
-
 .main_section3_container2_form_div_label{
     font-size: 2rem;
     font-weight: bold;
@@ -176,14 +175,20 @@
     border-radius: 5px;
     border: none;
     margin-top: 7px;
+    padding-left: 15px;
+    font-size: 1.6rem;
 }
 
 .main_section3_container2_form_div_textarea{
     resize: none;
     width: 100%;
+    max-height: 184px;
     font-size: 1.6rem;
+    padding: 0 15px;
     border: none;
-    margin-top: 7px;
+    padding-top: 7px;
+    line-height: 1.5;
+    font-weight: 100;
 }
 
 .main_section3_container2_form_divButton input{

@@ -14,7 +14,7 @@
     height: 95vh;
     min-height: 500px;
     z-index: 1;
-    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('../img/avivienda.webp') no-repeat;
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('../img/mejoraDeHipoteca.webp') no-repeat;
     background-size: cover;
     background-position: bottom;
 }

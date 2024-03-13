@@ -9,6 +9,7 @@
     {% load static %}
     <link href="{% static 'core/css/base.css' %}" rel="stylesheet">
     {% block css %}{% endblock %}
+    <link rel="icon" href="{% static 'core/img/favicon.png' %}">
     <meta name="description" content="Rogafin Sonora es un empresa de asesoría financiera">
     <title>{% block title %}{% endblock %} | Rogafin</title>
 </head>
@@ -78,8 +79,6 @@
         </section>
     </footer>
 
-
-    <script src="./js/index.js"></script>
     <script src="{% static 'core/javascript/index.js' %}"></script>
 </body>
 </html>

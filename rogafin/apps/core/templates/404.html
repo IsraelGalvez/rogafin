@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'core/css/404.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Error 404{% endblock %}
+
+
+{% block content %}
+
+    <main class="main">
+
+        <div>
+            <figure>
+                <img src="{% static 'core/img/404-page-error.webp' %}" alt="Error 404">
+            </figure>
+        </div>
+
+    </main>
+{% endblock %}

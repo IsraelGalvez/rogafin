@@ -1,0 +1,378 @@
+/* <-------- main container --------> */
+
+.main{
+    width: 100%;
+}
+
+/* <-------- main container section 1 --------> */
+
+.main_section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    min-height: 500px;
+    z-index: 1;
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('../img/inicioempresarial.webp') no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.main_section1_h1{
+    color: white;
+    font-size: 7rem;
+    margin-bottom: 15px;
+}
+
+.main_section1_hr{
+    width: 57px;
+    height: 7px;
+    background-color: white;
+    margin-bottom: 35px;
+}
+
+.main_section1_h3{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 35px;
+}
+
+.main_section1_a{
+    width: 370px;
+    height: 64px;
+    background-color: white;
+    color: #107353;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* <-------- main container section 2 --------> */
+
+.main_section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    z-index: 1;
+    background-color: #f0f0f0;
+}
+
+.main_section2_h2{
+    max-width: 730px;
+    text-align: center;
+    color: #107353;
+    font-size: 4.6rem;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.main_section2_h3{
+    width: 75%;
+    font-weight: 500;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main_section2_figure_imageSold{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.main_section2_img{
+    width: 90%;
+    height: auto;
+    max-width: 615px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+/* <-------- main container section 3 --------> */
+
+.main_section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 650px;
+    z-index: 1;
+}
+
+.main_section3_h2{
+    max-width: 930px;
+    text-align: center;
+    color: #107353;
+    font-size: 4.6rem;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.main_section3_hr{
+    width: 77px;
+    height: 5px;
+    background-color: #107353;
+    margin-bottom: 35px;
+}
+
+.section3_container_info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.section3_container_info_item{
+    width: 276px;
+    height: 340px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.section3_container_info_item:hover{
+    transform: translateY(-10px);
+}
+
+.section3_container_info_item_figure{
+    position: relative;
+    width: 100%; /* Ajusta esto a la anchura que necesites */
+    height: 176px;/* Ajusta esto a la altura que necesites */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.section3_container_info_item_figure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.7));
+    z-index: 1;
+    border-radius: 15px;
+    margin-top: 89px;
+}
+
+.section3_container_info_item_img {
+    width: 100%;
+    height: 176px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.section3_container_info_item_span{
+    position: relative;
+    width: 30%;
+    z-index: 2;
+    font-size: 1.6rem;
+    color: white;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section3_container_info_item_p{
+    width: 80%;
+    height: 84px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.section3_container_info_item_links_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section3_container_info_item_links_infoA{
+    width: 180px;
+    height: 30px;
+    background-color: #107353;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: solid 5px #28a745;
+}
+
+.section3_container_info_item_links_WhatsappA{
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/iconos/icons8-whatsapp-96.png');
+    background-size: cover; 
+    margin-left: 5px;
+}
+
+/* <-------- media querys --------> */
+
+@media (max-width: 1300px){
+    .section3_container_info{
+        max-width: 620px;
+    }
+
+    .section3_container_info_item{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 1185px){
+
+    .main_section3_h2{
+        margin-top: 30px;
+    }
+
+    .section3_container_info{
+        width: 600px;
+        height: auto;
+    }
+
+    .section3_container_info_item{
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+@media (max-width: 900px){
+    /* <-------- main container section 1 mobile --------> */
+    .main_section1_h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    .main_section1_hr{
+        width: 57px;
+        height: 7px;
+        background-color: white;
+        margin-bottom: 35px;
+    }
+    
+    .main_section1_h3{
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .main_section1_a{
+        font-size: 1.4rem;
+        width: 320px;
+    }
+
+    /* <-------- main container section 2 mobile --------> */
+
+    .main_section2_h2{
+        width: 95%;
+        font-size: 3.9rem;
+        text-align: center;
+    }
+    
+    .main_section2_h3{
+        font-size: 2.5rem;
+        text-align: center;
+        width: 75%;
+    }
+
+    /* <-------- main container section 3 mobile --------> */
+
+    .main_section3_h3{
+        width: 90%;
+    }
+
+    .main_section3_h2{
+        width: 90%;
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .main_section3_hr{
+        width: 77px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 797px){
+
+    .section3_container_info{
+        width: 300px;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 413px){
+    .main_section1_h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    .main_section1_hr{
+        width: 57px;
+        height: 7px;
+        background-color: white;
+        margin-bottom: 35px;
+    }
+    
+    .main_section1_h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .main_section1_a{
+        font-size: 1rem;
+        width: 250px;
+        height: 50px;
+    }
+
+    .main_section2_h2{
+        width: 95%;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .main_section2_h3{
+        font-size: 1.6rem;
+        text-align: center;
+        width: 80%;
+    }
+
+    .main_section3_h2{
+        width: 95%;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .main_section3_h3{
+        font-size: 2rem;
+        text-align: center;
+        width: 80%;
+    }
+}
+

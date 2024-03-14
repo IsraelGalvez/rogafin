@@ -1,0 +1,544 @@
+/* <-------- main container --------> */
+
+.main{
+    width: 100%;
+}
+
+/* <-------- main container section 1 --------> */
+
+.main_section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 95vh;
+    min-height: 500px;
+    z-index: 1;
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url('../img/créditoRevolvente1.webp') no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.main_section1_p{
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-left: 80px;
+}
+
+.main_section1_h1{
+    color: white;
+    font-size: 6.5rem;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
+
+.main_section1_hr{
+    width: 77px;
+    height: 7px;
+    background-color: white;
+    margin-bottom: 35px;
+    margin-left: 80px;
+}
+
+
+/* <-------- main container section 2 --------> */
+
+.main_section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    z-index: 1;
+}
+
+.main_section2_h2{
+    max-width: 730px;
+    text-align: center;
+    color: #107353;
+    font-size: 4.3rem;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.main_section2_hr{
+    width: 75px;
+    height: 8px;
+    background-color: #107353;
+    margin-bottom: 35px;
+}
+
+.main_section2_h3{
+    width: 75%;
+    font-weight: 500;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* <-------- main container section 3 --------> */
+
+.main_section3{
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_section3_div{
+    width: 80%;
+    margin: 40px 0;
+}
+
+.main_section3_div_h2{
+    color: #107353;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.main_section3_div_container{
+    display: flex;
+}
+
+.main_section3_container_ul{
+    list-style: none;
+    padding-right: 90px;
+}
+
+.main_section3_container_ul_div{
+    display: flex;
+}
+
+.main_section3_container_ul_div span{
+    color: #107353;
+    font-size: 7rem;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main_section3_container_ul_li{
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.main_section3_container_figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.main_section3_container_figure img{
+    width: 250px;
+    height: 250px;
+}
+
+/* <-------- main container section 4 --------> */
+
+.main_section4{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_section4_div{
+    width: 80%;
+    margin: 40px 0;
+}
+
+.main_section4_div_h2{
+    color: #107353;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main_section4_div_container{
+    display: flex;
+    justify-content: center;
+}
+
+.main_section4_container_ul{
+    list-style: none;
+    padding-right: 90px;
+}
+
+.main_section4_container_ul_div{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.main_section4_container_ul_div span{
+    color: #107353;
+    font-size: 7rem;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main_section4_container_ul_li{
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.main_section4_container_figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.main_section4_container_figure img{
+    width: 250px;
+    height: 250px;
+}
+
+/* <-------- main container section 5 --------> */
+
+.main_section5{
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_section5_div{
+    width: 80%;
+    margin: 40px 0;
+}
+
+.main_section5_div_h2{
+    color: #107353;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main_section5_div_container{
+    display: flex;
+    justify-content: center;
+}
+
+.main_section5_container_ul{
+    list-style: none;
+    padding-right: 90px;
+}
+
+.main_section5_container_ul_div{
+    display: flex;
+}
+
+.main_section5_container_ul_div span{
+    color: #107353;
+    font-size: 7rem;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main_section5_container_ul_li{
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.main_section5_container_figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.main_section5_container_figure img{
+    width: 250px;
+    height: 250px;
+}
+
+
+/* <-------- main container section 6 --------> */
+
+.main_section6{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_section6_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.main_section6_container_button{
+    width: 480px;
+    height: 40px;
+    background-color: #107353;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: solid 5px #28a745;
+    text-align: center;
+}
+
+.main_section6_container_button_WhatsappA{
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/iconos/icons8-whatsapp-96.png');
+    background-size: cover; 
+    margin-left: 15px;
+}
+
+/* <-------- media querys --------> */
+
+@media (max-width: 1400px){
+
+    .main_section2_h2{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 1142px){
+
+    /* <-------- main container section 3 mobile --------> */
+    .main_section3_div_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main_section3_container_ul{
+        padding-right: 0px;
+    }
+
+    .main_section3_container_figure{
+        margin: 0 auto;
+    }
+    
+
+    /* <-------- main container section 4 mobile --------> */
+    .main_section4_div_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main_section4_container_ul{
+        padding-right: 0px;
+    }
+
+    .main_section4_container_ul_div{
+        margin-bottom: 30px;
+    }
+
+    /* <-------- main container section 5 mobile --------> */
+    .main_section5_div_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main_section5_container_ul{
+        padding-right: 0px;
+    }
+
+}
+
+@media (max-width: 1021px){
+    .main_section2{
+        height: auto;
+    }
+    .main_section2_h2{
+        font-size: 4.3rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 900px){
+    /* <-------- main container section 1 mobile --------> */
+
+    .main_section1_p{
+        margin-left: 45px;
+    }
+
+    .main_section1_h1{
+        font-size: 5rem;
+        margin-left: 45px;
+    }
+
+    .main_section1_hr{
+        width: 77px;
+        height: 7px;
+        background-color: white;
+        margin-bottom: 35px;
+        margin-left: 45px;
+    }
+
+    /* <-------- main container section 2 mobile --------> */
+    .main_section2{
+        height: 400px;
+    }
+    .main_section2_h2{
+        width: 95%;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    .main_section2_h3{
+        font-size: 2rem;
+        text-align: center;
+        width: 75%;
+    }
+}
+
+@media (max-width: 750px){
+
+    .main_section6_container{
+        width: 90%;
+    }
+
+    .main_section6_container_button{
+        width: 380px;
+        height: 60px;
+        font-size: 1.6rem;
+        margin-right: 15px;
+    }
+
+    .main_section6_container_button_WhatsappA{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 510px){
+    .main_section2{
+        min-height: 500px;
+    }
+}
+
+
+@media (max-width: 423px){
+    /* <-------- main container section 1 mobile --------> */
+
+    .main_section1_p{
+        margin-left: 25px;
+    }
+
+    .main_section1_h1{
+        font-size: 3.7rem;
+        margin-left: 25px;
+        margin-bottom: 30px;
+    }
+
+    .main_section1_hr{
+        width: 57px;
+        height: 7px;
+        background-color: white;
+        margin-bottom: 35px;
+        margin-left: 25px;
+    }
+
+    /* <-------- main container section 2 mobile --------> */
+
+    .main_section2_h2{
+        width: 95%;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .main_section2_h3{
+        font-size: 1.6rem;
+        text-align: center;
+        width: 80%;
+    }
+
+    /* <-------- main container section 3 mobile --------> */
+
+    .main_section3_div{
+        width: 90%;
+    }
+
+    .main_section3_container_ul_div span{
+        font-size: 5rem;
+        margin-right: 10px;
+    }
+
+    .main_section3_container_ul_li{
+        font-size: 1.9rem;
+    }
+
+    /* <-------- main container section 4 mobile --------> */
+
+    .main_section4_div{
+        width: 90%;
+    }
+
+    .main_section4_container_ul_div span{
+        font-size: 5rem;
+        margin-right: 10px;
+    }
+
+    .main_section4_container_ul_li{
+        font-size: 1.9rem;
+    }
+
+        /* <-------- main container section 5 mobile --------> */
+
+        .main_section5_div{
+            width: 90%;
+        }
+    
+        .main_section5_container_ul_div span{
+            font-size: 5rem;
+            margin-right: 10px;
+        }
+    
+        .main_section5_container_ul_li{
+            font-size: 1.9rem;
+        }
+
+    /* <-------- main container section 6 mobile --------> */
+
+    .main_section6_container{
+        width: 95%;
+    }
+
+    .main_section6_container_button{
+        width: 320px;
+        height: 70px;
+    }
+
+}
+
+@media (max-width: 377px) {
+    .main_section6_container_button{
+        width: 280px;
+        height: 70px;
+    }
+}

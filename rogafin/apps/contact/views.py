@@ -18,7 +18,7 @@ class ContactPageView(FormView):
         credit_interest_display = form.cleaned_data['credit_interest']
         credit_interest_label = dict(form.fields['credit_interest'].choices)[credit_interest_display]
         message = form.cleaned_data['message']
-        mensaje = f'Nombre: {name}\nCorreo: {email}\nTeléfono: {phoneNum}\nCrédito de interés: {credit_interest_label}\nMensaje: {message}'
-        send_email(name, email, mensaje)
+        #mensaje = f'Nombre: {name}\nCorreo: {email}\nTeléfono: {phoneNum}\nCrédito de interés: {credit_interest_label}\nMensaje: {message}'
+        send_email(name, email, phoneNum, credit_interest_label, message)
         messages.success(self.request, 'Tu mensaje ha sido enviado correctamente.')
         return super().form_valid(form)

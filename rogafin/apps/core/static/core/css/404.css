@@ -1,5 +1,12 @@
 .main{
     width: 100%;
-    height: 100%;
-    background-color: red;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgError404{
+    width: 400px;
+    min-width: 300px;
 }

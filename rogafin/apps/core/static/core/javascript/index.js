@@ -43,3 +43,26 @@ sliders.forEach((slider, index) => {
     });
 });
 
+$(document).ready(function() {
+    // Verifica si el parámetro 'sent' está presente en la URL.
+    var urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('sent')) {
+        // Si el parámetro 'sent' está presente, desplaza la página hasta el mensaje.
+        var elem = document.getElementById('message');
+        if (elem) {
+            elem.scrollIntoView();
+        }
+    }
+
+    var form = document.querySelector('.main_section3_container2_form');
+    form.addEventListener('submit', function(e) {
+        // Agrega el parámetro 'sent' a la URL actual.
+        var currentUrl = window.location.href;
+        window.location = currentUrl + '?sent=true';
+        var elem = document.getElementById('message');
+        if (elem) {
+            elem.scrollIntoView();
+        }
+    });
+});
+

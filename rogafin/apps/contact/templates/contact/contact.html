@@ -91,6 +91,13 @@
                             {{ form.message }}
                         </div>
                     </div>
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="successMessage alert alert-{{ message.tags }}">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
                     <div class="main_section3_container2_form_divButton">
                         <input type="submit" value="Enviar">
                     </div>

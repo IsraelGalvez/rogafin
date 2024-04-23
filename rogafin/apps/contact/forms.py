@@ -24,5 +24,4 @@ class ContactForm(forms.Form):  # Not forms.Forms
         self.fields['message'].widget.attrs.update({'class': 'main_section3_container2_form_div_textarea'})
 
     def send_email(self):
-        # send email using the self.cleaned_data dictionary
         pass

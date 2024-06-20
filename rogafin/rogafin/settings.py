@@ -24,12 +24,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mfujhxllk0s402^iojp#p0239&_$v%))@bvajs=*_ih_1(cfa_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://prosaves.com.mx', 'https://www.prosaves.com.mx']
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
+SITE_ID = 3
 
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'apps.core',
     'apps.contact',
 ]
@@ -119,14 +126,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+# STATICFILES_DIRS = [BASE_DIR / 'static']
 
 #--------------------------------Lineas para el servidor de produccion--------------------------------
 
 STATICFILES_DIRS = STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

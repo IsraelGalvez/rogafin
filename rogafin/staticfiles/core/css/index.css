@@ -539,6 +539,7 @@
 @media (max-width: 1012px) {
     .section6_container_info{
         max-width: 600px;
+        justify-content: center;
     }
 
     .section6_container_info_item{

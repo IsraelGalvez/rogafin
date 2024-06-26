@@ -5,6 +5,11 @@ const buttonLefts = document.querySelectorAll('.main_section4_container_items_im
 const buttonRights = document.querySelectorAll('.main_section4_container_items_images_slider_buttonRight');
 const sliders = document.querySelectorAll('.main_section4_container_items_images_slider_div');
 
+
+window.addEventListener("load", () => {
+    this.document.getElementById('loader').classList.toggle('loader2')
+});
+
 menuButton.addEventListener("click", () => {
     if (nav.style.display === "none" || window.getComputedStyle(nav).getPropertyValue("display") === "none") {
         nav.style.display = "block";
